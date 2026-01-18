@@ -119,7 +119,11 @@ const config = {
     disableSwitch: false,
     respectPrefersColorScheme: false,
     displayAvatarRing: true,
-    themes: dark,
+    themes: [
+      'light',
+      'dark',
+      'procyon',
+    ],
     customTheme: {
       primary: '#fc055b',
       secondary: '#219aaf',
