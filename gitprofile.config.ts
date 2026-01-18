@@ -11,7 +11,7 @@ const config = {
     github: {
       display: true,
       header: 'Repositórios em Destaque',
-      mode: 'automatic', 
+      mode: 'manual', 
       automatic: {
         sortBy: 'stars',
         limit: 4, 
@@ -21,11 +21,16 @@ const config = {
         },
       },
       manual: {
-        projects: [], 
+        // Seus projetos selecionados a dedo
+        projects: [
+          'lucassantoss4/innovation-projects-manager',
+          'lucassantoss4/corporate-automation-suite',
+          'lucassantoss4/teams-comms-orchestrator',
+          'lucassantoss4/lucassantoss4', 
+        ],
       },
     },
     
-    // PROJETOS DE ARQUITETURA & AUTOMAÇÃO
     external: {
       header: 'Projetos de Arquitetura & Automação',
       projects: [
@@ -53,7 +58,7 @@ const config = {
   
   seo: { 
     title: 'Portfólio de Lucas Teixeira', 
-    description: 'Engenharia de Software, Automação e Cloud Computing.',
+    description: 'Engenheiro de Software em formação com ênfase em Backend, Cloud Computing e Automação (Python/AWS).',
     imageURL: '' 
   },
   
@@ -96,6 +101,17 @@ const config = {
   
   experiences: [
     {
+      company: 'Grupo Elfa',
+      position: 'Engenharia de Software - Inovação & IA',
+      from: '2023',
+      to: 'Presente',
+      companyLink: '',
+      // AQUI ESTÁ O NOVO TEXTO DA OPÇÃO 3
+      description: 
+        'Engenheiro de Software em formação com ênfase em Backend e Cloud Computing. Possuo experiência comprovada na criação de automações em Python e gestão de bancos de dados relacionais para substituir tarefas manuais repetitivas.\n\n' +
+        'Atuo desenvolvendo soluções que integram Web Scraping, APIs e serviços em Nuvem para otimizar a tomada de decisão e reduzir custos operacionais.',
+    },
+    {
       company: 'Escrevendo na Quebrada',
       position: 'Voluntário de Inovação & Dev Python',
       from: 'Novembro 2025',
@@ -103,18 +119,6 @@ const config = {
       companyLink: 'https://www.escrevendonaquebrada.org.br/',
       description: 
         'Atuo no desenvolvimento de soluções tecnológicas focadas em eficiência operacional e transformação digital para a área de Inovação Corporativa. Minha responsabilidade é substituir processos manuais por sistemas escaláveis, garantindo integridade de dados e agilidade na tomada de decisão.',
-    },
-    {
-      company: 'Grupo Elfa',
-      position: 'Engenharia de Software - Inovação & IA',
-      from: '2023',
-      to: 'Presente',
-      companyLink: '',
-      description: 
-        'Foco intensivo em desenvolvimento Backend, Arquitetura de Microsserviços e Cloud Computing.\n' +
-        '• Projetos práticos de manipulação de dados em larga escala usando Pandas e SQL.\n' +
-        '• Estudos avançados em infraestrutura como código (IaC) e containerização com Docker.\n' +
-        '• Desenvolvimento de APIs RESTful seguindo boas práticas de segurança e escalabilidade.',
     },
   ],
   
@@ -193,10 +197,9 @@ const config = {
   
   hotjar: { id: '', snippetVersion: 6 },
   
-  // CONFIGURAÇÃO DO TEMA (TRAVADO NO DARK)
   themeConfig: {
     defaultTheme: 'dark', 
-    disableSwitch: true, // Remove o botão de trocar tema
+    disableSwitch: true, // Travado no tema escuro
     respectPrefersColorScheme: false,
     displayAvatarRing: true,
     themes: [
