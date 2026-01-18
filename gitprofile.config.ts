@@ -41,7 +41,7 @@ const CONFIG = {
     imageURL: '' 
   },
   social: {
-    linkedin: '', // Preencha aqui seu linkedin, ex: 'lucas-teixeira'
+    linkedin: 'https://www.linkedin.com/in/lucas-t-santos/', // Preencha aqui seu linkedin, ex: 'lucas-teixeira'
     x: '',
     mastodon: '',
     researchGate: '',
