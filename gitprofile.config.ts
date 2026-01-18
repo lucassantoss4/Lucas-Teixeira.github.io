@@ -25,7 +25,7 @@ const config = {
       },
     },
     
-    // AQUI ESTÃO OS NOVOS PROJETOS ORGANIZADOS
+    // PROJETOS DE ARQUITETURA & AUTOMAÇÃO
     external: {
       header: 'Projetos de Arquitetura & Automação',
       projects: [
@@ -160,7 +160,6 @@ const config = {
     },
   ],
 
-  // AQUI ESTÃO AS PUBLICAÇÕES ATUALIZADAS
   publications: [
     {
       title: 'Na minha máquina funciona: Expondo seu Localhost',
@@ -194,15 +193,14 @@ const config = {
   
   hotjar: { id: '', snippetVersion: 6 },
   
+  // CONFIGURAÇÃO DO TEMA (TRAVADO NO DARK)
   themeConfig: {
-    defaultTheme: 'procyon', 
-    disableSwitch: false, 
+    defaultTheme: 'dark', 
+    disableSwitch: true, // Remove o botão de trocar tema
     respectPrefersColorScheme: false,
     displayAvatarRing: true,
     themes: [
-      'procyon', 
-      'dracula', 
-      'dark',    
+      'dark',
     ],
   },
 
