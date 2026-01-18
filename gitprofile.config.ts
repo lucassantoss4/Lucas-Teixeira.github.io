@@ -51,10 +51,10 @@ const config = {
     stackoverflow: '',
     website: '',
     phone: '',
-    email: 'seu-email@gmail.com',
+    email: 'contadulucas@gmail.com',
   },
   resume: {
-    fileUrl: '/curriculo.pdf',
+    fileUrl: '/CurrículoDadosIA.pdf',
   },
   skills: [
     'PYTHON (Pandas, Numpy, Selenium, BeautifulSoup)',
