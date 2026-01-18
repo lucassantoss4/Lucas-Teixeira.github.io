@@ -8,7 +8,7 @@ const config = {
   projects: {
     github: {
       display: true,
-      header: 'GitHub Projects',
+      header: 'Projetos no GitHub',
       mode: 'automatic',
       automatic: {
         sortBy: 'stars',
@@ -23,10 +23,10 @@ const config = {
       },
     },
     external: {
-      header: 'Key Projects',
+      header: 'Projetos de Destaque',
       projects: [
         {
-          title: 'Automated Expense Tracker',
+          title: 'Automação de Controle Financeiro',
           description: 'Desenvolvimento de uma ferramenta de automação para coleta e análise de despesas financeiras em Python, com integração de banco de dados PostgreSQL.',
           imageUrl: 'https://img.freepik.com/free-vector/data-extraction-concept-illustration_114360-4766.jpg',
           link: 'https://github.com/lucassantoss4',
@@ -35,8 +35,8 @@ const config = {
     },
   },
   seo: {
-    title: 'Portfolio | Lucas Teixeira',
-    description: 'Software Engineering Student & Automation Developer',
+    title: 'Portfólio | Lucas Teixeira',
+    description: 'Estudante de Engenharia de Software & Desenvolvedor de Automações',
     imageURL: '',
   },
   social: {
@@ -50,37 +50,37 @@ const config = {
     dev: '',
     stackoverflow: '',
     website: '',
-    phone: '',
-    email: 'contadulucas@gmail.com',
+    phone: '', 
+    email: 'seu-email@gmail.com',
   },
   resume: {
-    fileUrl: '/CurrículoDadosIA.pdf',
+    fileUrl: '/curriculo.pdf',
   },
   skills: [
     'PYTHON (Pandas, Numpy, Selenium, BeautifulSoup)',
     'SQL (PostgreSQL, MySQL)',
-    'CLOUD (AWS S3, Lambda, DynamoDB)',
-    'VERSION CONTROL (Git, GitHub)',
-    'DOCKER & CONTAINERIZATION',
-    'DATA VISUALIZATION (Power BI, Matplotlib)',
-    'AUTOMATION & SCRAPING',
-    'HEALTH IT CONCEPTS',
-    'DEVOPS PIPELINES',
+    'NUVEM (AWS S3, Lambda, DynamoDB)',
+    'CONTROLE DE VERSÃO (Git, GitHub)',
+    'DOCKER & CONTEINERIZAÇÃO',
+    'VISUALIZAÇÃO DE DADOS (Power BI, Matplotlib)',
+    'AUTOMAÇÃO & SCRAPING',
+    'CONCEITOS DE HEALTH IT (TI em Saúde)',
+    'PIPELINES DE DEVOPS',
   ],
   experiences: [
     {
       company: 'Escrevendo na Quebrada',
-      position: 'Innovation Volunteer & Python Developer',
-      from: 'November 2025',
-      to: 'Present',
+      position: 'Voluntário de Inovação & Desenvolvedor Python',
+      from: 'Novembro de 2025',
+      to: 'Presente',
       companyLink: 'https://www.escrevendonaquebrada.org.br/',
-      description: 'Liderando iniciativas de inovação tecnológica em ambiente de terceiro setor.\n• Desenvolvimento de scripts de automação para otimização de fluxos de trabalho.\n• Implementação de soluções de software utilizando Python para análise de dados internos.',
+      description: 'Liderando iniciativas de inovação tecnológica no setor social.\n• Desenvolvimento de scripts de automação para otimização de fluxos de trabalho.\n• Implementação de soluções de software utilizando Python para análise de dados internos.\n• Aplicação de metodologias ágeis (Scrum) para gestão de tecnologia.',
     },
     {
       company: 'Grupo Elfa',
-      position: 'Software Engineering Intern',
+      position: 'Estagiário de Engenharia de Software - Inovação & IA',
       from: '2024',
-      to: 'Present',
+      to: 'Presente',
       companyLink: 'https://grupoelfa.com.br/',
       description: 'Atuação em projetos de Inovação e Inteligência Artificial no setor de saúde (Health IT).\n• Auxílio no desenvolvimento de ferramentas para eficiência operacional.\n• Estudo e aplicação de infraestrutura em nuvem (AWS) e bancos de dados relacionais.',
     },
@@ -96,12 +96,11 @@ const config = {
   education: [
     {
       institution: 'Uniamerica - Descomplica',
-      degree: 'Bachelor in Software Engineering',
+      degree: 'Bacharelado em Engenharia de Software',
       from: '2024',
       to: '2028',
     },
   ],
-  // ESTAS SEÇÕES SÃO OBRIGATÓRIAS PARA NÃO DAR O ERRO 'ID'
   publications: [],
   blog: {
     source: 'dev',
@@ -109,10 +108,10 @@ const config = {
     limit: 2,
   },
   googleAnalytics: {
-    id: '', // Mantenha isso aqui, mesmo vazio
+    id: '',
   },
   hotjar: {
-    id: '', // Mantenha isso aqui, mesmo vazio
+    id: '',
     snippetVersion: 6,
   },
   themeConfig: {
@@ -120,38 +119,7 @@ const config = {
     disableSwitch: false,
     respectPrefersColorScheme: false,
     displayAvatarRing: true,
-    themes: [
-      'light',
-      'dark',
-      'cupcake',
-      'bumblebee',
-      'emerald',
-      'corporate',
-      'synthwave',
-      'retro',
-      'cyberpunk',
-      'valentine',
-      'halloween',
-      'garden',
-      'forest',
-      'aqua',
-      'lofi',
-      'pastel',
-      'fantasy',
-      'wireframe',
-      'black',
-      'luxury',
-      'dracula',
-      'cmyk',
-      'autumn',
-      'business',
-      'acid',
-      'lemonade',
-      'night',
-      'coffee',
-      'winter',
-      'procyon',
-    ],
+    themes: dark,
     customTheme: {
       primary: '#fc055b',
       secondary: '#219aaf',
@@ -162,7 +130,7 @@ const config = {
       '--rounded-btn': '3rem',
     },
   },
-  footer: `Made with ❤️`,
+  footer: `Feito com ❤️ por Lucas Teixeira`,
 };
 
 export default config;
