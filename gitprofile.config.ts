@@ -10,11 +10,11 @@ const config = {
   projects: {
     github: {
       display: true,
-      header: 'My GitHub Projects', // Seus projetos reais ficam aqui
+      header: 'Repositórios em Destaque',
       mode: 'automatic', 
       automatic: {
         sortBy: 'stars',
-        limit: 8,
+        limit: 4, // Mostra os 4 melhores. Mais que isso polui.
         exclude: {
           forks: false,
           projects: [],
@@ -24,99 +24,83 @@ const config = {
         projects: [], 
       },
     },
-    
-    // --- O TRUQUE COMEÇA AQUI ---
-    // Vamos usar esta seção para imitar a área de "Skills" detalhada dele
     external: {
-      header: 'Skills & Technologies', // Renomeamos o título para parecer Skills
-      projects: [
-        {
-          title: 'Python Ecosystem',
-          description: 'Pandas, Numpy, Scikit-learn, PyCaret, Matplotlib, Seaborn, Plotly, Folium, BeautifulSoup, Selenium for automation and data analysis.',
-          imageUrl: '', 
-          link: '', // Deixe vazio para não parecer um link clicável
-        },
-        {
-          title: 'SQL & Databases',
-          description: 'Create, modify and retrieve data from relational database management systems (e.g. MySQL, PostgreSQL). Experience with complex queries.',
-          imageUrl: '', 
-          link: '',
-        },
-        {
-          title: 'Cloud Platforms (AWS)',
-          description: 'Worked with AWS services including S3, DynamoDB, Rekognition, API Gateway, Lambda, BigQuery and IAM permissions.',
-          imageUrl: '', 
-          link: '',
-        },
-        {
-          title: 'DevOps & Tools',
-          description: 'Familiarity with Git/GitHub for version control. Docker for containerization and creating images for models and applications.',
-          imageUrl: '', 
-          link: '',
-        },
-      ],
+      header: 'Projetos de Arquitetura & Automação',
+      // Use esta seção APENAS se tiver um projeto complexo que não está no GitHub
+      // ou se quiser linkar para um artigo técnico/diagrama.
+      projects: [],
     },
   },
   
   seo: { 
-    title: 'Portfolio of Lucas Teixeira', 
-    description: 'Software Engineering Student',
+    title: 'Portfólio de Lucas Teixeira', 
+    description: 'Engenharia de Software, Automação e Cloud Computing.',
     imageURL: '' 
   },
   
   social: {
-    linkedin: 'lucas-teixeira',
-    x: '',
-    mastodon: '',
-    researchGate: '',
-    facebook: '',
-    instagram: '',
-    reddit: '',
-    threads: '',
-    youtube: '', 
-    udemy: '',
-    dribbble: '',
-    behance: '',
-    medium: 'lucasteixeira',
+    linkedin: 'lucas-teixeira', // Ajuste para seu link real
+    medium: '', 
     dev: '', 
-    stackoverflow: '', 
-    discord: '',
-    telegram: '',
-    website: '',
-    phone: '',
-    email: 'lucas@example.com',
+    email: 'contadulucas@gmail.com',
+    // Mantenha apenas o necessário. Backend dev não precisa de Instagram aqui.
   },
   
   resume: {
     fileUrl: '/curriculo.pdf', 
   },
   
-  // Deixamos vazio para não duplicar informação
-  skills: [],
+  // LISTA TÉCNICA DIRETA: O que o recrutador busca (Keywords)
+  skills: [
+    'Python',
+    'Automation',
+    'AWS Lambda',
+    'AWS S3',
+    'PostgreSQL',
+    'SQL',
+    'Docker',
+    'Git Flow',
+    'CI/CD',
+    'Linux',
+    'Scrum',
+    'Pandas',
+    'Selenium',
+    'Data Analysis',
+  ],
   
   experiences: [
     {
       company: 'Escrevendo na Quebrada',
-      position: 'Innovation Volunteer',
-      from: 'November 2025',
-      to: 'Present',
+      position: 'Voluntário de Inovação & Dev Python',
+      from: 'Nov 2025',
+      to: 'Presente',
       companyLink: 'https://www.escrevendonaquebrada.org.br/',
-      description: 'Managing and developing POCs for innovative projects using Automation and AI tools.\n' +
-                   '• Managing the development of internal tools utilizing Python scripts.\n' +
-                   '• Developed an automation solution for data entry using Selenium and Pandas.',
+      description: 
+        'Desenvolvimento de automações para otimização de processos internos.\n' +
+        '• Criação de scripts Python para análise de dados e relatórios.\n' +
+        '• Implementação de soluções de IA para suporte administrativo.',
     },
     {
       company: 'Em Busca de Oportunidade',
-      position: 'Software Engineering Student',
+      position: 'Estudante de Engenharia de Software',
       from: '2023',
-      to: 'Present',
+      to: 'Presente',
       companyLink: '',
-      description: 'Focusing on Cloud Computing (AWS), DevOps practices, and Python automation projects.',
+      description: 
+        'Foco acadêmico em arquitetura de software, infraestrutura em nuvem (AWS) e bancos de dados relacionais.',
     },
   ],
   
-  certifications: [],
-  
+  certifications: [
+    // Se tiver certificações AWS, coloque aqui. Isso vale ouro para Backend.
+    {
+      name: 'AWS Cloud Practitioner',
+      body: 'Amazon Web Services',
+      year: 'Em andamento',
+      link: '',
+    },
+    */
+  ],
   education: [
     {
       institution: 'Uniamerica - Descomplica',
@@ -126,8 +110,7 @@ const config = {
     },
   ],
   
-  publications: [], 
-  
+  // Blog é opcional, se você não escreve artigos, melhor deixar oculto.
   blog: {
     source: 'dev',
     username: '', 
@@ -141,22 +124,18 @@ const config = {
   hotjar: { id: '', snippetVersion: 6 },
   
   themeConfig: {
-    defaultTheme: 'procyon', 
-    disableSwitch: false,
+    defaultTheme: 'dracula', // TEMA "DEV RAIZ": Fundo escuro, cores de sintaxe.
+    disableSwitch: true, // Trava no escuro. Backend dev não usa tema claro.
     respectPrefersColorScheme: false,
     displayAvatarRing: true,
     themes: [
-      'light',
-      'dark',
+      'dracula',
       'procyon',
+      'dark',
     ],
   },
 
-  footer: `Made with <a 
-      class="text-primary" href="https://github.com/arifszn/gitprofile"
-      target="_blank"
-      rel="noreferrer"
-    >GitProfile</a>`,
+  footer: `Desenvolvido por Lucas Teixeira`, // Simples e direto.
 
   enablePWA: true,
 };
