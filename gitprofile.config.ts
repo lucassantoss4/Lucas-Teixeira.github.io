@@ -2,7 +2,7 @@
 
 const config = {
   github: {
-    username: 'lucassantoss4', 
+    username: 'lucassantoss4',
   },
   base: '/',
   projects: {
@@ -12,16 +12,18 @@ const config = {
       mode: 'automatic',
       automatic: {
         sortBy: 'stars',
-        limit: 4, // Menos projetos automáticos para dar destaque aos manuais igual ao dele
-        exclude: { forks: false, projects: [] },
+        limit: 4,
+        exclude: {
+          forks: false,
+          projects: [],
+        },
       },
       manual: {
-        // Coloque aqui os nomes REAIS dos seus repositórios para aparecerem primeiro
-        projects: ['lucassantoss4/nome-do-seu-projeto-principal'], 
+        projects: [],
       },
     },
     external: {
-      header: 'Featured Projects',
+      header: 'Key Projects',
       projects: [
         {
           title: 'Automated Expense Tracker',
@@ -38,8 +40,8 @@ const config = {
     imageURL: '',
   },
   social: {
-    linkedin: 'lucas-teixeira', // AJUSTE: coloque seu id real do linkedin
-    x: '',
+    linkedin: 'lucas-teixeira',
+    twitter: '',
     mastodon: '',
     facebook: '',
     instagram: '',
@@ -48,11 +50,11 @@ const config = {
     dev: '',
     stackoverflow: '',
     website: '',
-    phone: '', // Se quiser igual ao dele: '+55 (11) 9XXXX-XXXX'
-    email: 'contadulucas@gmail.com',
+    phone: '',
+    email: 'seu-email@gmail.com',
   },
   resume: {
-    fileUrl: '/CurrículoDadosIA.pdf', // Certifique-se de subir o arquivo na pasta 'public'
+    fileUrl: '/curriculo.pdf',
   },
   skills: [
     'PYTHON (Pandas, Numpy, Selenium, BeautifulSoup)',
@@ -72,7 +74,7 @@ const config = {
       from: 'November 2025',
       to: 'Present',
       companyLink: 'https://www.escrevendonaquebrada.org.br/',
-      description: 'Liderando iniciativas de inovação tecnológica em ambiente de terceiro setor.\n• Desenvolvimento de scripts de automação para otimização de fluxos de trabalho.\n• Implementação de soluções de software utilizando Python para análise de dados internos.\n• Uso de metodologias ágeis (Scrum) para gestão de voluntariado e tecnologia.',
+      description: 'Liderando iniciativas de inovação tecnológica em ambiente de terceiro setor.\n• Desenvolvimento de scripts de automação para otimização de fluxos de trabalho.\n• Implementação de soluções de software utilizando Python para análise de dados internos.',
     },
     {
       company: 'Grupo Elfa',
@@ -90,12 +92,6 @@ const config = {
       year: '2025',
       link: '',
     },
-    {
-      name: 'Python for Data Science',
-      body: 'Alura / Coursera',
-      year: '2024',
-      link: '',
-    },
   ],
   education: [
     {
@@ -105,16 +101,68 @@ const config = {
       to: '2028',
     },
   ],
-  // O Thales não tem publicações, mas usa essa área para "Keywords" ou outros detalhes
+  // ESTAS SEÇÕES SÃO OBRIGATÓRIAS PARA NÃO DAR O ERRO 'ID'
   publications: [],
+  blog: {
+    source: 'dev',
+    username: '',
+    limit: 2,
+  },
+  googleAnalytics: {
+    id: '', // Mantenha isso aqui, mesmo vazio
+  },
+  hotjar: {
+    id: '', // Mantenha isso aqui, mesmo vazio
+    snippetVersion: 6,
+  },
   themeConfig: {
     defaultTheme: 'procyon',
     disableSwitch: false,
     respectPrefersColorScheme: false,
     displayAvatarRing: true,
-    themes: ['light', 'dark', 'procyon'],
+    themes: [
+      'light',
+      'dark',
+      'cupcake',
+      'bumblebee',
+      'emerald',
+      'corporate',
+      'synthwave',
+      'retro',
+      'cyberpunk',
+      'valentine',
+      'halloween',
+      'garden',
+      'forest',
+      'aqua',
+      'lofi',
+      'pastel',
+      'fantasy',
+      'wireframe',
+      'black',
+      'luxury',
+      'dracula',
+      'cmyk',
+      'autumn',
+      'business',
+      'acid',
+      'lemonade',
+      'night',
+      'coffee',
+      'winter',
+      'procyon',
+    ],
+    customTheme: {
+      primary: '#fc055b',
+      secondary: '#219aaf',
+      accent: '#e8d03a',
+      neutral: '#2A2730',
+      'base-100': '#E3E3ED',
+      '--rounded-box': '3rem',
+      '--rounded-btn': '3rem',
+    },
   },
-  footer: `Made with ❤️ by Lucas Teixeira`,
+  footer: `Made with ❤️`,
 };
 
 export default config;
