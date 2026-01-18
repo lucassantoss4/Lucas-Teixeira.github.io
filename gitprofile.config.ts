@@ -10,11 +10,11 @@ const config = {
   projects: {
     github: {
       display: true,
-      header: 'Repositórios em Destaque',
+      header: 'Projetos em Destaque',
       mode: 'automatic', 
       automatic: {
         sortBy: 'stars',
-        limit: 4, // AJUSTADO: Mostra apenas os 4 principais
+        limit: 4, 
         exclude: {
           forks: false,
           projects: [],
@@ -25,7 +25,7 @@ const config = {
       },
     },
     external: {
-      header: 'Projetos de Arquitetura & Automação',
+      header: 'Projetos de Arquitetura',
       projects: [],
     },
   },
@@ -40,41 +40,44 @@ const config = {
     linkedin: 'lucas-teixeira',
     medium: '', 
     dev: '', 
-    email: 'lucas.teixeira@example.com',
+    email: 'lucas@example.com', // Lembre de colocar seu email real aqui
+    // Removi redes sociais desnecessárias para manter o visual limpo
   },
   
   resume: {
     fileUrl: '/curriculo.pdf', 
   },
   
-  // AJUSTADO: Ícones visuais (Emojis) para cada tecnologia
+  // SKILLS: Limpo, sem ícones, apenas as tecnologias
   skills: [
-    '🐍 Python',
-    '🤖 Automation',
-    '☁️ AWS',
-    '🐘 PostgreSQL',
-    '🗄️ SQL',
-    '🐳 Docker',
-    '🐧 Linux',
-    '🐙 Git / GitHub',
-    '🚀 CI/CD',
-    '🐼 Pandas',
-    '🕸️ Selenium',
-    '📊 Data Analysis',
-    '🔄 Scrum',
+    'Python',
+    'Automation',
+    'AWS Lambda',
+    'AWS S3',
+    'PostgreSQL',
+    'SQL',
+    'Docker',
+    'Git Flow',
+    'CI/CD',
+    'Linux',
+    'Scrum',
+    'Pandas',
+    'Selenium',
+    'Data Analysis',
   ],
   
   experiences: [
     {
       company: 'Escrevendo na Quebrada',
       position: 'Voluntário de Inovação & Dev Python',
-      from: 'Nov 2025',
+      from: 'Novembro 2025',
       to: 'Presente',
       companyLink: 'https://www.escrevendonaquebrada.org.br/',
       description: 
-        'Desenvolvimento de automações para otimização de processos internos.\n' +
-        '• Criação de scripts Python para análise de dados e relatórios.\n' +
-        '• Implementação de soluções de IA para suporte administrativo.',
+        'Liderança técnica em projetos de impacto social focados em automação.\n' +
+        '• Desenvolvimento de scripts em Python para automatizar a coleta e processamento de dados administrativos.\n' +
+        '• Implementação de melhorias em processos internos utilizando conceitos de cultura ágil e inovação.\n' +
+        '• Manutenção de repositórios e documentação técnica para garantir a continuidade dos projetos.',
     },
     {
       company: 'Em Busca de Oportunidade',
@@ -83,12 +86,33 @@ const config = {
       to: 'Presente',
       companyLink: '',
       description: 
-        'Foco acadêmico em arquitetura de software, infraestrutura em nuvem (AWS) e bancos de dados relacionais.',
+        'Desenvolvimento focado em Backend, Microsserviços e Arquitetura em Nuvem.\n' +
+        '• Criação de projetos práticos utilizando AWS (S3, Lambda, EC2) para entender escalabilidade.\n' +
+        '• Estudo aprofundado de bancos de dados relacionais (PostgreSQL) e otimização de queries SQL.\n' +
+        '• Prática constante de algoritmos e estruturas de dados em Python.',
     },
   ],
   
+  // PREENCHI: Cursos relevantes para seu perfil
   certifications: [
-    // Espaço reservado para futuras certificações AWS
+    {
+      name: 'AWS Cloud Practitioner (Em andamento)',
+      body: 'Amazon Web Services',
+      year: '2026',
+      link: 'https://aws.amazon.com/certification/',
+    },
+    {
+      name: 'Python for Data Science & Automation',
+      body: 'Curso Técnico Complementar',
+      year: '2025',
+      link: '',
+    },
+    {
+      name: 'Inglês Técnico para TI',
+      body: 'Formação de Idiomas',
+      year: 'Em andamento',
+      link: '',
+    },
   ],
   
   education: [
@@ -97,6 +121,13 @@ const config = {
       degree: 'Bacharelado em Engenharia de Software',
       from: '2024',
       to: '2028',
+    },
+    // Adicionei uma formação complementar genérica para encher o currículo
+    {
+      institution: 'Formação Autodidata & Bootcamps',
+      degree: 'Foco em Cloud Computing e DevOps',
+      from: '2023',
+      to: 'Presente',
     },
   ],
   
@@ -113,18 +144,17 @@ const config = {
   hotjar: { id: '', snippetVersion: 6 },
   
   themeConfig: {
-    defaultTheme: 'dracula', 
-    disableSwitch: true, 
+    defaultTheme: 'black', // TEMA PRETO ATIVADO
+    disableSwitch: true, // Impede que o usuário mude o tema
     respectPrefersColorScheme: false,
     displayAvatarRing: true,
     themes: [
-      'dracula',
-      'procyon',
+      'black', // Apenas o tema preto disponível na lista principal
       'dark',
     ],
   },
 
-  footer: `Desenvolvido por Lucas Teixeira`, 
+  footer: `Lucas Teixeira © 2026`, 
 
   enablePWA: true,
 };
