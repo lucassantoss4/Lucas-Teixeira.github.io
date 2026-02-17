@@ -70,7 +70,7 @@ const config = {
   },
   
   resume: {
-    fileUrl: '/curriculoLucasTeixeira.pdf', 
+    fileUrl: '/CV_python.pdf.pdf', 
   },
   
   skills: [
