@@ -98,22 +98,30 @@ const config = {
     'Clean Code',
   ],
   
-  experiences: [
+experiences: [
     {
       company: 'Grupo Elfa',
-      position: 'Engenharia de Software - Inovação & IA',
-      from: '2023',
+      position: 'Estagiário Automação de Processos (Inovação & IA)',
+      from: 'Julho 2024',
       to: 'Presente',
       companyLink: '',
-      description: 'Engenheiro de Software em formação com ênfase em Backend e Cloud Computing. Possuo experiência comprovada na criação de automações em Python e gestão de bancos de dados relacionais para substituir tarefas manuais repetitivas. Atuo desenvolvendo soluções que integram Web Scraping, APIs e serviços em Nuvem para otimizar a tomada de decisão e reduzir custos operacionais.',
+      description: 'Desenvolvimento de soluções para eficiência operacional e transformação digital, utilizando Python e Inteligência Artificial. Atuo na centralização de dados via APIs (eliminando planilhas), automação de onboarding/offboarding com auditoria de acessos, Web Scraping para inteligência de mercado e orquestração de comunicação corporativa via RPA.',
     },
     {
       company: 'Escrevendo na Quebrada',
-      position: 'Voluntário de Inovação & Dev Python',
-      from: 'Novembro 2025',
+      position: 'Líder de Automação de Processos',
+      from: 'Setembro 2025',
       to: 'Presente',
       companyLink: 'https://www.escrevendonaquebrada.org.br/',
-      description: 'Atuo no desenvolvimento de soluções tecnológicas focadas em eficiência operacional e transformação digital para a área de Inovação Corporativa. Minha responsabilidade é substituir processos manuais por sistemas escaláveis, garantindo integridade de dados e agilidade na tomada de decisão.',
+      description: 'Liderança técnica no desenvolvimento de soluções automatizadas, incluindo mapeamento de processos e Web Scraping de editais públicos de educação. Criação de Chatbot no WhatsApp para atendimento automatizado, integrando fluxos de conversação inteligentes.',
+    },
+    {
+      company: 'Educafro',
+      position: 'Professor de Programação Voluntário',
+      from: 'Abril 2025',
+      to: 'Agosto 2025',
+      companyLink: '',
+      description: 'Ensino de lógica de programação em Python. Desenvolvi uma automação interna para correção de notas, reduzindo o tempo administrativo em 50%.',
     },
   ],
   
