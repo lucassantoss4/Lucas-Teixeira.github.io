@@ -9,7 +9,7 @@ const config = {
 
   projects: {
     github: {
-      display: true,
+      display: false, // <-- MUDEI AQUI: Isso desliga a seção "Repositórios em Destaque"
       header: 'Repositórios em Destaque',
       mode: 'manual', 
       automatic: {
